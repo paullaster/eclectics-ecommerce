@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 1.6em;
+    background-color: cornsilk;
+}
+/* Style navigation */
+.header{
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: 20% 20% ;
+    column-gap: 58%;
+    padding:.8%;
+}
+.header-logo-container{
+    width:50%;
+}
+.header-logo-container_img{
+    width: 100%;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.header-navbar_items{
+    margin-right: 2.0em;
+    font-size: 1.6em;
+    font-weight: 900;
+    cursor:pointer;
+    color: whitesmoke;
+    padding: .4em;
+    box-shadow: .1em .1em .2em .4em rgba(0, 0, 0, 0.010), .1em .1em .2em .4em rgba(0, 0, 0, 0.010);
+    border-radius: .4em;
+    transition: all .5s ease-in-out;
+}
+.header-navbar_items:hover{
+    background-color: rgba(3, 3, 63, 0.493);
+}
+.header-navbar_items:last-child{
+    margin-right: 0;
+}
+.header-cart-container{
+    margin: auto 0;
+    display: flex;
+    justify-content: right;
+}
+.header-cart-container_cart{
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.header-cart-container_cart:hover{
+    color: rgba(3, 3, 63, 0.493);
+}
+/* styling main content */
+.main{
+    margin-top: 4em;
+}
+/* Heading primary for product section */
+.page-heading{
+    margin:4%;
+    text-align:center;
+}
+.heading-primary{
+    font-size: 2em;
+    font-weight: 800;
+}
+/* Styling product section */
+.products{
+    display:  grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 2em;
+    row-gap: 4em;
+}
+.products-container{
+    background-color: #f8f8f8;
+    padding: 8%;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap:2em;
+    box-shadow: .1em .1em .2em .4em rgba(0, 0, 0, 0.025), .1em .1em .2em .4em rgba(0, 0, 0, 0.025);
+}
+.products-container_title{
+    text-align: center;
+}
+.products-container_title >span{
+    font-size: 1.6em;
+}
+.products-container_image{
+    text-align: center;
+}
+.products-container_image >img{
+    width: 70%;
+    height: auto;
+
+}
+.products-container_others{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 40%;
+    column-gap: .8em;
+}
+.products-container_others-div{
+    display:grid;
+    grid-template-rows: auto ;
+    row-gap: .4em;
+    text-align:center;
+}
+.products-container_others-div > span{
+    display: block;
+}
+.products-container_others-heading{
+    font-size: 1.0em;
+    font-weight: 600;
+}
+.btn-container{
+    margin-left: -.8em ;
+}
+.select-btn{
+    width:90%;
+    padding: 8% 2%;
+    background-color: skyblue;
+    color: whitesmoke;
+    border:none;
+    outline: none;
+    font-size: 1.0em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.select-btn:hover{
+    background-color: rgba(3, 3, 63, 0.493);
+}
+.buynow-btn{
+    width:20%;
+    padding: .8% .2%;
+    background-color: skyblue;
+    color: whitesmoke;
+    border:none;
+    outline: none;
+    font-size: 1.0em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+.buynow-btn:hover{
+    background-color: rgba(3, 3, 63, 0.493);
+}
+.margins{
+    margin: 4% 0;
+}
+
+
+/* Login page */
+.login-container{
+    background-color:#f8f8f8;
+    width:30%;
+    padding: 8% .8%;
+    margin-left: 35%;
+    text-align:center;
+    box-shadow: .1em .1em .2em .4em rgba(0, 0, 0, 0.034), .1em .1em .2em .4em rgba(0, 0, 0, 0.034);
+}
+.form-label{
+    display:block;
+    margin-bottom: .4em;
+    font-size: 1.0em;
+    font-weight:600;
+
+}
+.form-input{
+    display: block;
+    margin-bottom:.4em;
+    margin-left: 16%;
+    width:80%;
+    height: 5vh;
+    font-size:1.2em;
+    border:none;
+    outline: none;
+    background-color: rgba(128, 0, 128, 0.137);
+}
+.btn{
+    display: block;
+    width:80%;
+    margin-left: 16%;
+    height:5vh;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: skyblue;
+    color: whitesmoke;
+    border:none;
+    outline: none;
+    margin-top: .8em;
+    transition:all .5s ease-in-out;
+}
+.btn:hover{
+    background-color:rgba(3, 3, 63, 0.493);
+}
+.login-container > span{
+    font-size:1.6em;
+    font-weight: 800;
+    display: block;
+    margin-top: -2.0em;
+    margin-bottom: 1.2em;
+}
